@@ -5,21 +5,21 @@
 class StellarGoCli < Formula
   desc "Go CLI for the Stellar network — wallets, Soroban contracts, DEX swaps, DIDs and W3C Verifiable Credentials, ISO 20022 reporting"
   homepage "https://github.com/stellar-go-cli/stellar-go-cli"
-  version "0.7.1"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.7.1/stellar-go-cli_0.7.1_darwin_amd64.tar.gz"
-      sha256 "33f20a3d0b738adfc3bd932c0707bd2c385f8119cd121759314b5d8b882d2f82"
+      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.8.0/stellar-go-cli_0.8.0_darwin_amd64.tar.gz"
+      sha256 "61606908e61976a602ebabc80d2946224242a0374c49ba67f8151250b691dcb4"
 
       define_method(:install) do
         bin.install "stellar-go-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.7.1/stellar-go-cli_0.7.1_darwin_arm64.tar.gz"
-      sha256 "78c8e13f94ab7e80c382c85493e3cb07fc142bcfb6d533c0579dbadc6e011245"
+      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.8.0/stellar-go-cli_0.8.0_darwin_arm64.tar.gz"
+      sha256 "5bc1bcd5fae2ef47b0c318d931d80eaf0d154af4ae622e9ab0bcd32ed6435e4c"
 
       define_method(:install) do
         bin.install "stellar-go-cli"
@@ -29,15 +29,15 @@ class StellarGoCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.7.1/stellar-go-cli_0.7.1_linux_amd64.tar.gz"
-      sha256 "44de4a3c71fbbba7f42aa577180ad4dc48be8787fa2fdc56f2636892f561b576"
+      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.8.0/stellar-go-cli_0.8.0_linux_amd64.tar.gz"
+      sha256 "392525f72aae5983eb16c253469d331a38287160823705112348de75142e01bb"
       define_method(:install) do
         bin.install "stellar-go-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.7.1/stellar-go-cli_0.7.1_linux_arm64.tar.gz"
-      sha256 "0069f3932451ce17f6a0f23e964b7f3bce8167c5de0cef8d0e0e4263adda6286"
+      url "https://github.com/stellar-go-cli/stellar-go-cli/releases/download/v0.8.0/stellar-go-cli_0.8.0_linux_arm64.tar.gz"
+      sha256 "8f14d194242a3552399c6a1abee9cfa3c9a110c4465c0e0901afe5eb5266189c"
       define_method(:install) do
         bin.install "stellar-go-cli"
       end
